@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+   xmlns:ex="http://example.org/"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+>
+  <rdf:Description rdf:about="http://example.org/Ashish_Vaswani">
+    <rdf:type rdf:resource="http://example.org/person"/>
+    <ex:works_for rdf:resource="http://example.org/Google_Brain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Illia_Polosukhin">
+    <rdf:type rdf:resource="http://example.org/person"/>
+    <ex:None rdf:resource="http://example.org/None"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Llion_Jones">
+    <rdf:type rdf:resource="http://example.org/person"/>
+    <ex:works_for rdf:resource="http://example.org/Google_Research"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Google_Brain">
+    <rdf:type rdf:resource="http://example.org/organization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Google_Research">
+    <rdf:type rdf:resource="http://example.org/organization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Jakob_Uszkoreit">
+    <rdf:type rdf:resource="http://example.org/person"/>
+    <ex:works_for rdf:resource="http://example.org/Google_Research"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Niki_Parmar">
+    <rdf:type rdf:resource="http://example.org/person"/>
+    <ex:works_for rdf:resource="http://example.org/Google_Research"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/None">
+    <rdf:type rdf:resource="http://example.org/None"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Noam_Shazeer">
+    <rdf:type rdf:resource="http://example.org/person"/>
+    <ex:works_for rdf:resource="http://example.org/Google_Brain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/University_of_Toronto">
+    <rdf:type rdf:resource="http://example.org/organization"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Łukasz_Kaiser">
+    <rdf:type rdf:resource="http://example.org/person"/>
+    <ex:works_for rdf:resource="http://example.org/Google_Brain"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://example.org/Aidan_N._Gomez">
+    <rdf:type rdf:resource="http://example.org/person"/>
+    <ex:is_employed_by rdf:resource="http://example.org/University_of_Toronto"/>
+  </rdf:Description>
+</rdf:RDF>
