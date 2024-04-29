@@ -22,7 +22,7 @@ os.environ["NEO4J_PASSWORD"] = "H3110_W0r1d"
 load_dotenv()
 oai = OpenAI()
 
-graph = Neo4jGraph() # apoc issues : https://github.com/langchain-ai/langchain/issues/12901
+# graph = Neo4jGraph() # apoc issues : https://github.com/langchain-ai/langchain/issues/12901
 
 def extract_text_before_keywords(pdf_path, keywords=None):
     if not keywords:
@@ -96,6 +96,4 @@ print(f"Nodes:{graph_documents[0].nodes}")
 print(f"Relationships:{graph_documents[0].relationships}")
 print("Execution time:", execution_time, "seconds")
 
-graph.add_graph_documents(graph_documents)
 
-graph.refresh_schema()

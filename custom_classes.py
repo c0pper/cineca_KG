@@ -214,7 +214,8 @@ class LLMGraphTransformer:
         # Define chain
         schema = create_simple_model(allowed_nodes, allowed_relationships)
         structured_llm = llm.with_structured_output(schema)
-        self.chain = prompt | structured_llm
+        # self.chain = prompt | structured_llm
+        self.chain = prompt
 
     def process_response(self, document: Document) -> GraphDocument:
         """
@@ -222,6 +223,10 @@ class LLMGraphTransformer:
         an LLM based on the model's schema and constraints.
         """
         text = document.page_content
+        trig_output = self.chain.invoke({"input": text})
+        
+        
+        
         output_2b_casted = self.chain.invoke({"input": text})
         raw_schema = cast(_Graph, output_2b_casted)
         nodes = (
